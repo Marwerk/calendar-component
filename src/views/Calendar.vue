@@ -1,11 +1,11 @@
 <script setup>
-import Header from "./Header.vue";
-import calendarGrid from "./calendarGrid.vue";
+import calendarHeader from "../components/calendarHeader.vue";
+import calendarGrid from "../components/calendarGrid.vue";
 </script>
 <template>
   <main>
     <!-- Using Header and calendarGrid Component -->
-    <Header />
+    <calendarHeader />
     <calendarGrid />
   </main>
 </template>

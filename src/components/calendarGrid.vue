@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const range = (end: number) => {
   return Array.from({ length: end }, (_, i) => i + 1);
@@ -9,7 +9,7 @@ const range = (end: number) => {
 <template>
   <div class="calendar-grid">
     <div class="days-grid">
-      <div v-for="(day, index) in DAYS" :key="index" class="day" :title="day">
+      <div v-for="(day, index) in days" :key="index" class="day" :title="day">
         {{ day }}
         <!-- Remove [0] to show full day names -->
       </div>
